@@ -80,16 +80,21 @@ label {
 	border-radius: 0.3rem;
 	font-size: 1rem;
 	padding-left: 0.3rem;
+	background-color: #fafafa;
 	padding-right: 0.3rem;
+	width: 100%;
 }
 .infoForm textarea {
 	border: 0.08rem solid #bbbbbb;
 	border-radius: 0.3rem;
 	height: 4.8rem;
+	min-height: 4.8rem;
+	width: 100%;
 	font-size: 1rem;
 	padding-left: 0.3rem;
 	padding-top: 0.3rem;
 	margin-bottom: 1.4rem;
+	resize: none;
 }
 .formBtn {
 	margin: 0 auto;
