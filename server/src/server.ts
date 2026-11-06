@@ -26,11 +26,11 @@ app.use(helmet());
 app.use(express.json({ limit: '10kb' }));
 
 const submissionLimiter = rateLimit({
-	windowMs: 60 * 1000,
+	windowMs: 5 * 60 * 1000,
 	limit: 1,
 	standardHeaders: 'draft-8',
 	legacyHeaders: false,
-	message: { error: 'Please wait 60 seconds before posting again.' }
+	message: { error: 'Please wait 5 minutes before posting again.' }
 });
 
 const validString = (value: unknown, max: number) =>
