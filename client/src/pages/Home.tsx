@@ -4,12 +4,13 @@ import type { Entry } from '../types';
 import { Leaf, Sprout } from 'lucide-react'
 
 const Home = () => {
+	const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
 	const [users, setUsers] = useState<Entry[]>([])
 
 	useEffect(() => {
 		const fetchUsers = async () => {
 			try {
-				const response = await fetch('http://localhost:3000/api/entries');
+				const response = await fetch(`${API_URL}/api/entries`);
 
 				if (!response.ok) throw new Error('Failed to fetch entries');
 
@@ -39,7 +40,7 @@ const Home = () => {
 	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
 		try {
-			const response = await fetch('http://localhost:3000/api/entries', {
+			const response = await fetch(`${API_URL}/api/entries`, {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json'
