@@ -8,3 +8,11 @@ datasource db {
 }
 
 // Add your first model when your project needs persistent data.
+
+model Entry {
+	id         Int      @id @default(autoincrement())
+	username   String		@db.VarChar(25)
+	soberSince DateTime @db.Date
+	location   String?	@db.VarChar(30)
+	message    String		@db.VarChar(185)
+}
