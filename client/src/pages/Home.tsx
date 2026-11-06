@@ -32,7 +32,7 @@ const Home = () => {
 						<label htmlFor='username'>Username</label>
 						<input id='username' name='username' value={form.username} onChange={handleChange} placeholder='Enter a Name'></input>
 						<label htmlFor='username'>Sober Since</label>
-						<input type='datetime-local' id='soberSince' name='soberSince' value={form.soberSince} onChange={handleChange}></input>
+						<input type='date' id='soberSince' name='soberSince' value={form.soberSince} onChange={handleChange}></input>
 						<label htmlFor='location'>Location</label>
 						<input id='location' name='location' value={form.location} onChange={handleChange} placeholder='Where are you from?'></input>
 						<label htmlFor='username'>Your Message</label>
