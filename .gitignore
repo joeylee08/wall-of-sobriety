@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+*.backup
+.DS_Store
+server/src/generated/
+venv/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store

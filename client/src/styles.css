@@ -1,0 +1,133 @@
+/* 
+off white: #fafafa;
+soft orange: #FFA766;
+bright orange: #FF8A3D
+deep orange: #D95A1B;
+light gray: #bbbbbb;
+dark gray: #343A40;
+black: #171717;
+
+background gray: #EFEFEF;
+*/
+
+* { 
+	box-sizing: border-box; 
+	font-family: "Quicksand", sans-serif;
+}
+body {
+	margin: 0;
+	background-color: #F2EDE4;
+}
+.mainPage {
+	width: 100%;
+	margin: 0;
+	margin-bottom: 3rem;
+}
+.header {
+	height: 12rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	background-color: #303030;
+	padding-left: 2rem;
+}
+.header h1 {
+	margin: 0;
+	font-size: 4rem;
+	font-weight: 550;
+	color: white;
+}
+.header h2 {
+	margin: 0;
+	font-size: 1.8rem;
+	font-weight: 400;
+	color: white;;
+}
+.child1 {
+	padding-top: 3rem;
+}
+.formWrapper {
+	margin: 0 auto 0.9rem auto;
+	width: 50%;
+}
+.infoForm {
+	display: flex;
+	flex-direction: column;
+	background-color: #fafafa;
+	gap: 0.1rem;
+	font-size: 1rem;
+	padding: 2rem 2rem 1.7rem 2rem;
+	border: 0.08rem solid #bbbbbb;;
+	border-radius: 0.6rem;
+}
+.infoForm input {
+	margin-bottom: 0.4rem;
+	height: 1.8rem;
+	border: 0.08rem solid #bbbbbb;
+	border-radius: 0.3rem;
+	font-size: 1rem;
+	padding-left: 0.3rem;
+	padding-right: 0.3rem;
+}
+.infoForm textarea {
+	border: 0.08rem solid #bbbbbb;
+	border-radius: 0.3rem;
+	height: 4.5rem;
+	font-size: 1rem;
+	padding-left: 0.3rem;
+	margin-bottom: 1.4rem;
+}
+.formBtn {
+	margin: 0 auto;
+	width: 12rem;
+	height: 2.5rem;
+	border: 0.08rem solid #bbbbbb;
+	border-radius: 0.4rem;
+	background-color: #fafafa;
+}
+.formBtn:hover {
+	cursor: pointer;
+	color: white;
+	background-color: #303030;;
+}
+.child2 {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 20rem);
+	justify-content: center;
+	gap: 1rem;
+	width: 100%;
+	padding: 2rem 0;
+}
+.tile {
+	border: 0.08rem solid #bbbbbb;;
+	border-radius: 0.6rem;
+	width: 20rem;
+	padding: 1.2rem 0.9rem 1.2rem 1.2rem;
+	background-color: #fafafa;;
+}
+.nameLocation {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0;
+}
+.nameLocation p {
+	padding-bottom: 0.3rem;
+}
+.tile h3 {
+	font-weight: 600;
+	font-size: 1.2rem;
+	margin: 0;
+	color: #707070;
+}
+.tile h2 {
+	font-size: 1.7rem;
+	font-weight: 600;
+	margin: 0.5rem 0;
+	color: green;
+}
+.tile p {
+	margin: 0;
+	color: #303030;
+}
