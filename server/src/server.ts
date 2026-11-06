@@ -15,7 +15,12 @@ const adapter = new PrismaPg({
 const prisma = new PrismaClient({ adapter });
 
 app.use(express.json());
-app.use(cors({ origin: 'http://localhost:5173' }));
+
+const allowedOrigins = (
+	process.env.CLIENT_ORIGINS || 'http://localhost:5173'
+).split(',').map(origin => origin.trim());
+
+app.use(cors({ origin: allowedOrigins }));
 
 app.use(helmet());
 app.use(express.json({ limit: '10kb' }));
@@ -84,6 +89,8 @@ app.post('/api/entries', submissionLimiter, async (req, res) => {
 	}
 })
 
-app.listen(3000, () => {
-	console.log('Server running on port 3000');
+const PORT = Number(process.env.PORT || 3000);
+
+app.listen(PORT, '0.0.0.0', () => {
+	console.log(`Server running on port ${PORT}`);
 });
