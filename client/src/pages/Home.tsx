@@ -73,7 +73,6 @@ const Home = () => {
 		<div className='mainPage home'>
 			<div className='header'>
 				<h1>One Day at a Time</h1>
-				<h2>A little wall of people choosing sobriety.</h2>
 			</div>
 			<div className='iconBox'>
 				<Leaf className='sprout' size={65}/>
